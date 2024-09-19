@@ -1,0 +1,22 @@
+.surveyList ul {
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.surveyList li {
+  width: fit-content;
+  padding: 10px 30px;
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.surveyList li:hover {
+  background-color: #f1f1f1;
+}

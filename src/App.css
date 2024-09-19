@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100vw;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  margin: 50px;
+}
+
+.surveys {
+  display: flex;
+  justify-content: flex-start;
+  gap: 700px;
+}
