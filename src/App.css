@@ -1,5 +1,15 @@
+.allContent {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .wrapper {
   width: 100vw;
+
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -8,10 +18,30 @@ h1 {
 
 .content {
   margin: 50px;
+  flex: 1;
 }
 
 .surveys {
   display: flex;
   justify-content: flex-start;
   gap: 700px;
+}
+
+.footer {
+  background-color: #007bff;
+  padding: 25px 0px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+.diagrams {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

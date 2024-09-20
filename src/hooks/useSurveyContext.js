@@ -11,21 +11,18 @@ export const SurveyProvider = ({ children }) => {
   const [selectedSurvey, setSelectedSurvey] = useState(null)
   const [results, setResults] = useState([])
 
-  // Додавання нового опитування
   const addSurvey = (newSurvey) => {
     setSurveys((prevSurveys) => [...prevSurveys, newSurvey])
   }
 
-  // Вибір опитування
   const selectSurvey = (survey) => {
     setSelectedSurvey(survey)
   }
 
-  // Надсилання форми
-  const submitSurvey = (answers) => {
-    setResults(answers)
+  const submitSurvey = (surveyId, answers) => {
+    const newResult = { surveyId, answers }
+    setResults((prevResults) => [...prevResults, newResult])
   }
-
   return (
     <SurveyContext.Provider
       value={{
