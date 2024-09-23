@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/big-lab/static/css/main.88b0fffd.css",
-    "main.js": "/big-lab/static/js/main.0af40f1c.js",
+    "main.css": "/big-lab/static/css/main.2f1ee418.css",
+    "main.js": "/big-lab/static/js/main.4469a9ea.js",
     "index.html": "/big-lab/index.html",
-    "main.88b0fffd.css.map": "/big-lab/static/css/main.88b0fffd.css.map",
-    "main.0af40f1c.js.map": "/big-lab/static/js/main.0af40f1c.js.map"
+    "main.2f1ee418.css.map": "/big-lab/static/css/main.2f1ee418.css.map",
+    "main.4469a9ea.js.map": "/big-lab/static/js/main.4469a9ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.88b0fffd.css",
-    "static/js/main.0af40f1c.js"
+    "static/css/main.2f1ee418.css",
+    "static/js/main.4469a9ea.js"
   ]
 }
