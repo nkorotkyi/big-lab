@@ -5,6 +5,7 @@ import SurveyForm from "./SurveyForm"
 import SurveyList from "./SurveyList"
 import { v4 as uuidv4 } from "uuid"
 import "../App.css"
+import { MyButton } from "./UI/MyButton"
 
 const Home = () => {
   const { surveys, addSurvey, selectSurvey, selectedSurvey, submitSurvey, results } = useSurveyContext()
@@ -34,8 +35,8 @@ const Home = () => {
       <main>
         <div className="content">
           <h1>Додаток-опитувальник</h1>
-          <button onClick={() => setCreatingNewSurvey(true)}>Створити нове опитування</button>
 
+          <MyButton onClick={() => setCreatingNewSurvey(true)}>Створити нове опитування</MyButton>
           {creatingNewSurvey && (
             <SurveyForm
               isOpen={creatingNewSurvey}
@@ -65,7 +66,7 @@ const Home = () => {
                       />
                     </div>
                   ))}
-                  <button onClick={handleSubmitSurvey}>Надіслати відповіді</button>
+                  <MyButton onClick={handleSubmitSurvey}>Надіслати відповіді</MyButton>
                 </div>
               )}
             </div>

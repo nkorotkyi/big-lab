@@ -1,10 +1,11 @@
 import React from "react"
+import { MyInput } from "./UI/MyInput"
 
 const Question = ({ question, onAnswer }) => {
   return (
     <div>
       <p>{question.text}</p>
-      <input type="text" onChange={(e) => onAnswer(e.target.value)} />
+      <MyInput type="text" onChange={(e) => onAnswer(e.target.value)} />
     </div>
   )
 }

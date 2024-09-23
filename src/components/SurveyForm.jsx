@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { createPortal } from "react-dom"
 import styles from "../styles/SurveyForm.module.css"
+import { MyButton } from "./UI/MyButton"
+import { MyInput } from "./UI/MyInput"
 
 const SurveyForm = ({ isOpen, onClose, onCreateSurvey }) => {
   const [title, setTitle] = useState("")
@@ -32,7 +34,7 @@ const SurveyForm = ({ isOpen, onClose, onCreateSurvey }) => {
     <div className={styles.modal}>
       <form onSubmit={handleSubmit}>
         <h2>Нове опитування</h2>
-        <input
+        <MyInput
           type="text"
           placeholder="Заголовок"
           value={title}
@@ -40,7 +42,7 @@ const SurveyForm = ({ isOpen, onClose, onCreateSurvey }) => {
           required
         />
         {questions.map((question, index) => (
-          <input
+          <MyInput
             key={index}
             type="text"
             placeholder={`Питання ${index + 1}`}
@@ -49,13 +51,13 @@ const SurveyForm = ({ isOpen, onClose, onCreateSurvey }) => {
             required
           />
         ))}
-        <button type="button" onClick={addQuestion}>
+        <MyButton type="button" onClick={addQuestion}>
           Додати питання
-        </button>
-        <button type="submit">Створити опитування</button>
-        <button type="button" onClick={onClose}>
+        </MyButton>
+        <MyButton type="submit">Створити опитування</MyButton>
+        <MyButton type="button" onClick={onClose}>
           Відміна
-        </button>
+        </MyButton>
       </form>
     </div>,
     document.getElementById("portal-root")
